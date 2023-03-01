@@ -1,3 +1,5 @@
+import random
+
 import pytest
 import math
 
@@ -53,8 +55,12 @@ def test_random_list():
     """
     # TODO создайте список
     l = []
+    l= [random.randint(1, 100) for x in range(10)]
+    l.sort()
     assert len(l) == 10
     assert l[0] < l[-1]
+
+
 def test_unique_elements():
     """
     Удалите из списка все повторяющиеся элементы
