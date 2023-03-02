@@ -11,7 +11,7 @@ def test_greeting():
     name = "Анна"
     age = 25
     # TODO Сформируйте нужную строку
-    output = "Привет, {name}! Тебе {age} лет.".format(name=name, age=age)
+    output = "Привет, {}! Тебе {} лет.".format(name, age)
     # Проверяем результат
     assert output == "Привет, Анна! Тебе 25 лет."
 
@@ -52,7 +52,6 @@ def test_random_list():
     Создайте список из 10 случайных чисел от 1 до 100 и отсортируйте его по возрастанию.
     """
     # TODO создайте список
-    l = []
     l= [random.randint(1, 100) for x in range(10)]
     l.sort()
     assert len(l) == 10
@@ -81,7 +80,6 @@ def test_dicts():
     first = ["a", "b", "c", "d", "e"]
     second = [1, 2, 3, 4, 5]
     # TODO создайте словарь.
-    d = {}
     d = dict(zip(first, second))
     assert isinstance(d, dict)
     assert len(d) == 5
