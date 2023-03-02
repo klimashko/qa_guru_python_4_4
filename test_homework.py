@@ -82,7 +82,7 @@ def test_dicts():
     """
     first = ["a", "b", "c", "d", "e"]
     second = [1, 2, 3, 4, 5]
-    # TODO создайте словарь
+    # TODO создайте словарь.
     d = {}
     d = dict(zip(first, second))
     assert isinstance(d, dict)
